@@ -21,7 +21,7 @@
  * PROVIDED HEREUNDER IS PROVIDED "AS IS". HTBLA LEONDING HAS NO OBLIGATION
  * TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
  */
-package httpurl;
+
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -44,7 +44,7 @@ public class HttpUrlChecker {
     //}
     
     public static Matcher getMatcher(String s){
-        Pattern p = Pattern.compile("(https?:\\/\\/([^\\-][a-zA-Z\\-1-9]*\\.)*[^\\-][a-zA-Z\\-1-9]*[^\\-]\\.[a-zA-Z]+)");
+        Pattern p = Pattern.compile("(https?:\\/\\/([^\\-][a-zA-Z\\-1-9]*\\.)*[a-zA-Z1-9]*[^\\-]\\.[a-zA-Z]+)");
         return p.matcher(s);
     }
 }
